@@ -1,0 +1,67 @@
+.app-banner {
+    background-image: url('../../../assets/images/banner_bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px 0;
+}
+
+.download-sectoin {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .d-descrition {
+        margin-top: 20px;
+        flex: 5;
+    }
+
+    .d-img {
+        flex: 3;
+    }
+
+
+    .buttons{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .btn-dwl {
+            display: block;
+            background-color: white;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            margin: 30px;
+            padding: 10px;
+            display: flex;
+            width: 150px;
+            flex-direction: row;
+            justify-content: space-between;
+            color: rgb(53, 53, 53);
+            svg {
+                width: 35px;
+                height: 35px;
+            }
+        }
+    }
+
+    .phone {
+        margin: auto;
+        width: 150px;
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        flex-direction: column-reverse;
+        align-self: center;
+        justify-content: center;
+        .buttons{
+            flex-direction: column;
+            .btn-dwl{
+                margin: 15px;
+            }
+        }
+    }
+}
